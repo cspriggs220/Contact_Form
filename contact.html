@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link type="text/css" rel="stylesheet" href="contact.css">
+		<title>Contact</title>
+	<script type="text/javascript" 
+	src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<link rel="stylesheet" href="fancyapps-fancyBox-0ffc358/source/jquery.fancybox.css?v=2.1.4" type="text/css" media="screen" />
+	<script type="text/javascript" src="fancyapps-fancyBox-0ffc358/source/jquery.fancybox.pack.js?v=2.1.4"></script>
+
+	<script>
+		$(document).ready(function() {
+			$(".fancybox").fancybox({
+				maxWidth	: 800,
+				maxHeight	: 600,
+				fitToView	: false,
+				width		: '70%',
+				height		: '70%',
+				autoSize	: false,
+				closeClick	: false,
+				openEffect	: 'none',
+				closeEffect	: 'none'
+				});//end fancybox
+		});
+	</script>
+	</head>
+	<body>
+		<header class="clearfix"> <img src="http://www.harris4kids.com/wp-content/uploads/2012/02/ContactUs_Icon1.jpg" alt="Contact">
+		<h1>Stay In Touch</h1>
+		</header>
+		<div id="iframe">
+			<ul>
+				<h3>My Current Faves</h3>
+				<li><a href="http://www.youtube.com/embed/G0k3kHtyoqc" class="fancybox fancybox.iframe">The Hobbit</a></li>
+				<li><a href="http://www.youtube.com/embed/kqF8lcKTLw0" class="fancybox fancybox.iframe">The Dark Knight Rises</a></li>
+			</ul>
+		</div>
+<!--form begins-->
+			<form>
+		  <fieldset class="info">
+		    <legend>Your info:</legend>
+				<p>Name: <input type="text" name="name" maxlength="50" placeholder="John Doe" required autofocus><br></p>
+				<p>Email: <input type="email" name="email" maxlength="100" placeholder="johndoe@email.com"><br></p>
+				<p>Zip Code: <input type="text" name="zip" maxlength="5" placeholder="75501"><br></p>
+				<p>Phone: <input type="text" name="phone" placeholder="Eg. +12345678900"><br></p>
+				<p>Skype Username: <input type="text" name="skype" placeholder="skype username"><br></p>
+		  </fieldset>
+<!--right form div--><div id="rightForm" class="clearfix">
+		  <fieldset class="gender">
+<!--use one of these to ask what social media platform(s) they use most often-->
+		  	<legend>Gender</legend>
+				<p><input type="checkbox" 
+					name="gender" 
+					value="male" 
+					checked="checked" />Male	
+					
+					<input type="checkbox" 
+					name="gender" 
+					value="female" />Female
+				</p>
+		  </fieldset>		
+			<fieldset class="drink">
+			<legend>What's Your Drink of Choice?</legend>
+				<p><input type="radio" 
+					name="drink" 
+					value="beer" 
+					checked="checked" />Beer
+					
+					<input type="radio" 
+					name="drink" 
+					value="wine" />Wine
+					
+					<input type="radio" 
+					name="drink" 
+					value="other" />Other <input id="namerec" type="text" name="namerec" placeholder="Other"
+				</p><br>
+			</fieldset>
+			<fieldset class="browser">
+				<legend>Which browser are you using?</legend>
+				<select name="browser">
+					<option value="safari" selected="selected">Safari</option>
+					<option value="chrome">Chrome</option>
+					<option value="internet explorer">Internet Explorer</option>
+					<option value="firefox">Firefox</option>
+				</select>
+			</fieldset>
+<!--end form div--></div>
+			<br>
+			<fieldset class="comments">
+				<legend>Feel free to leave me a comment on the page as well!</legend>
+				<textarea placeholder="Be nice..." id="comments" name="comments" cols="47" rows="10"></textarea>
+			</fieldset>
+<!--end form--></form>
+			<footer>
+				<br><br>
+			<p><strong>Thank you for visiting!</strong></p>
+				<div id="submit">
+					<input type="submit" value="Submit" />
+					<br><br>
+				</div>
+			</footer>	
+	</body>
+</html>		
